@@ -1,4 +1,4 @@
-# MorningMood-
+# MorningMood
 Comfortable configurable theme
 Based on Frosted Glass by Gibbu
 
