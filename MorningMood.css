@@ -1,0 +1,317 @@
+/**
+ * @name Morning Mood
+ * @author reset300
+ * @version 3.2
+ * @description Based on Frosted Glass by Gibbu
+*/
+
+@import url("https://discordstyles.github.io/FrostedGlass/dist/FrostedGlass.css");
+@import url('https://monstrousdev.github.io/themes/addons/user-tags.css');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Background image variables */
+  --background-image: url('https://i.pinimg.com/originals/d7/33/34/d733345e4f11231904e7634a04439e21.gif');
+  --background-image-blur: 3px;
+  --background-image-size: cover; 
+  --background-image-position: center;
+
+  --popout-modal-image: var(--background-image);
+  --popout-modal-blur: 5px; 
+  --popout-modal-size: cover;
+  --popout-modal-position: center; 
+
+  --home-button-image: url('https://gibbu.github.io/BetterDiscord-Themes/FrostedGlass/assets/discord.svg'); 
+  --home-button-position: center;
+
+  /* Brightness variables */
+  --left-brightness: 0.45; 
+  --middle-brightness: 0; 
+  --right-brightness: 0.15; 
+  --popout-modal-brightness: 0.9; 
+
+  /* Gradient variables*/
+  --gradient-primary: 1,1,1;        
+  --gradient-middle: 80,5,25;       
+  --gradient-secondary: 1,1,1;      
+  --gradient-direction: 320deg; 
+
+  /* Tint variables */
+  --tint-colour: 20,0,15;
+  --tint-brightness: 0.4; 
+
+  /* Other variables */
+  --window-padding: 5px;
+  --window-roundness: 15px;
+  --scrollbar-colour: rgba(130,30,200,0.15);
+  --link-colour: #a855f7;
+
+  --font: 'JetBrains Mono', 'Whitney', monospace;
+
+  /* Do not touch */
+  --update-notice-1: none;
+}
+
+/* Gradient Override */
+:root {
+  --gradient: linear-gradient(
+    var(--gradient-direction), 
+    rgb(var(--gradient-primary)), 
+    rgb(var(--gradient-middle)) 50%, 
+    rgb(var(--gradient-secondary))
+  );
+  
+  --gradient-20: linear-gradient(
+    var(--gradient-direction), 
+    rgba(var(--gradient-primary), 0.2), 
+    rgba(var(--gradient-middle), 0.2) 50%, 
+    rgba(var(--gradient-secondary), 0.2)
+  );
+  
+  --gradient-50: linear-gradient(
+    var(--gradient-direction), 
+    rgba(var(--gradient-primary), 0.5), 
+    rgba(var(--gradient-middle), 0.5) 50%, 
+    rgba(var(--gradient-secondary), 0.5)
+  );
+  
+  --gradient-90: linear-gradient(
+    var(--gradient-direction), 
+    rgba(var(--gradient-primary), 0.9), 
+    rgba(var(--gradient-middle), 0.9) 50%, 
+    rgba(var(--gradient-secondary), 0.9)
+  );
+}
+
+/* Title bar */
+.bar_c38106 {
+  background: linear-gradient(
+    var(--gradient-direction),
+    rgba(var(--gradient-primary), 0.95),
+    rgba(var(--gradient-middle), 0.95) 50%,
+    rgba(var(--gradient-secondary), 0.95)
+  ) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  
+}
+
+/* Server list shit */
+.wrapper_ef3116 {
+  background-color: rgba(0, 0, 0, 0.35) !important;
+}
+
+/* More shit idk how to describe */
+.outer_c0bea0, .header__7f9c0, .banner__68edb, .root_bfe55a {
+  background-color: rgba(0, 0, 0, 0.35) !important;
+}
+
+.mask__68edbbanner__68edb, .banner__7f9c0{
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.overlay_c0bea0, .overlay_b32ca4{
+  background-color: rgba(0, 0, 0, 0.1) !important;
+} /* almost same shit btw */
+
+/* another bg but for settings now */
+.standardSidebarView__23e6b{
+  opacity: 1 !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  inset: 0 !important;
+  position: absolute !important;
+  z-index: 101 !important;
+}
+
+.layer__960e4 {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  border-radius: 12px !important;
+}
+
+.sidebarRegionScroller__23e6b, .auto_d125d2 {
+  background-color: rgba(0, 0, 0, 0.01) !important;
+  border-radius: 12px !important;
+}
+
+.sidebar__23e6b {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  border-radius: 12px !important;
+}
+
+.contentColumn__23e6b {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  border-radius: 12px !important;
+}
+
+.container_c2b141 {
+  position: fixed;        
+  top: 45px;           
+  right: 20px;            
+  margin: 0;              
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  padding: 10px;
+  z-index: 1000;       
+}
+
+/* smth else shit stuff yeah */
+.wrapper_cb9592,
+.noChat_cb9592,
+.video_cb9592,
+.sidebarOpen_cb9592,
+.callContainer_cb9592,
+.background_fb62e2 {
+  background: none !important;
+  background-color: transparent !important;
+}
+
+.gradientTop_bfe55a,
+.gradientBottom_bfe55a {
+  display: none !important;
+}
+
+.channelChatWrapper_cb9592, .resizeHandle__01ae2, .container__9293f{
+  background-color: rgba(0, 0, 0, 0.25) !important;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+}
+
+.children__9293f::after{
+  display: none !important;
+}
+
+.tile__2f4f7 {
+    border-radius: 12px !important;
+    background-color: rgba(0, 0, 0, 0.32);
+}
+
+.overlayContainer__2f4f7, .content__2f4f7{
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* Ton of Fucking animations */
+:root {
+  --transition-time: 0.35s;
+}
+
+/* universal smoothness */
+* {
+  transition:
+    background-color var(--transition-time) ease,
+    color var(--transition-time) ease,
+    border-color var(--transition-time) ease,
+    opacity var(--transition-time) ease,
+    transform var(--transition-time) ease,
+    backdrop-filter calc(var(--transition-time) + 0.1s) ease !important;
+  animation-iteration-count: 1 !important;
+  animation-fill-mode: forwards !important;
+}
+
+/* fade only on big layout changes */
+.standardSidebarView__23e6b,
+.channelChatWrapper_cb9592 {
+  animation: fadeIn 0.35s ease forwards;
+}
+
+/* i hate spam  */
+[class*="container_"],
+[class*="wrapper_"],
+[class*="content_"],
+[class*="messagesWrapper_"],
+[class*="sidebar_"],
+[class*="page_"],
+[class*="popout_"],
+[class*="menu_"],
+[class*="modal_"] {
+  animation: none !important;
+}
+
+/* main fade */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.99);
+    filter: blur(2px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+  }
+}
+
+/* subtle chat fade when switching channels */
+.messagesWrapper__36d57,
+.channelChatWrapper_cb9592 {
+  animation: fadeInChat 0.35s ease forwards;
+}
+
+@keyframes fadeInChat {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* sidebar slide-in */
+.sidebar__23e6b {
+  animation: fadeSlideRight 0.3s ease forwards;
+}
+
+@keyframes fadeSlideRight {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* optimization */
+html, body {
+  will-change: opacity, transform, filter;
+}
+
+*:hover {
+  animation: none !important;
+}
+
+/* more anims */
+.messagesWrapper__36d57,
+.channelChatWrapper_cb9592 {
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.messagesWrapper__36d57:not(:empty) {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.messagesWrapper__36d57:empty {
+  opacity: 0;
+  transform: translateY(6px);
+}
+
+.channelChatWrapper_cb9592 {
+  animation: fadeChatChange 0.4s ease forwards;
+}
+
+@keyframes fadeChatChange {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+    filter: blur(3px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
